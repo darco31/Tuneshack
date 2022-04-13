@@ -12,3 +12,9 @@ class HomeView(ListView):
 
     model = Post
     template_name = 'home.html'
+
+
+class PostView(DeleteView):
+
+    model = Post
+    template_name = 'post_detail.html'
