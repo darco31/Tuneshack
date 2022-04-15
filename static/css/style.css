@@ -55,9 +55,9 @@ a {
 /* social icons from font awesome */
 #social-contact {
   background-color: var(--watermelon);
+  margin-top: 135px;
 }
 .social-networks {
-  margin-top: 165px;
   text-align: center;
 }
 .social-networks>li {
@@ -74,6 +74,5 @@ a {
   font-size: 1.1rem;
   padding: 10px;
   text-align: center;
-  /* margin-bottom: 40px; */
   color: #36232c;
 }
