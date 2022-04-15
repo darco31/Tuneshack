@@ -1,8 +1,10 @@
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Color Variables */
 :root {
-    --blue: #1e90ff;
+    --watermelon: #ff3b3f;
+    --ink: #062f4f;
     --white: #ffffff;
   }
 
@@ -14,5 +16,13 @@
   }
 
 body {
-    background-color: var(--blue);
+    background-color: var(--ink);
+}
+
+.list-item {
+  color: var(--watermelon);
+}
+
+.head {
+  color: var(--white);
 }

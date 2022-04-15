@@ -4,9 +4,9 @@
 
 
 
-<h1>Post</h1>
+<h1 class="head">Post</h1>
 
-<ul>
+<ul class="list-item">
 {% for post in object_list %}
 
     <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }}

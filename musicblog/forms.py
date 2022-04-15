@@ -13,11 +13,11 @@ class PostForm(forms.ModelForm):
         )
 
         """
-        Add form control below from bootstrap
+        Add form control and placeholder text below from bootstrap
         """
 
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control'}),
+            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Put your title here!!'}),
             'author': forms.Select(attrs={'class': 'form-control'}),
-            'body': forms.Textarea(attrs={'class': 'form-control'}),
+            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Express yourself'}),
         }
