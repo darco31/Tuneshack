@@ -3,7 +3,9 @@
 
 {% block content %}
 
-<h1>Add Post</h1>
+
+<div class="mx-5">
+<h1 class="my-2">Add Post</h1>
 
 <form method="post">
 {% csrf_token %}
@@ -13,3 +15,5 @@
 <button class="btn btn-secondary">Submit</button>
 
 {% endblock %}
+
+</div>
