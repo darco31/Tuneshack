@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Edit Your Posts{% endblock %}
+
+{% block content %}
+
+
+<div class="mx-5">
+<h1 class="head my-2">Update Post</h1>
+
+<form method="post">
+{% csrf_token %}
+
+<!-- django form system -->
+{{ form.as_p }}
+<button class="btn btn-secondary">Update</button>
+
+{% endblock %}
+
+</div>
