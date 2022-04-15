@@ -19,7 +19,7 @@
   </head>
   <body>
       <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="{% url 'home' %}">TuneShack</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,6 +40,32 @@
     {% block content%}
 
     {% endblock %}
+
+    <!-- Footer section to include some contact info and social links taken from my first project-->
+    <footer id="social-contact">
+      <ul class="social-networks">
+          <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener"
+                  aria-label="Visit our Facebook page(opens in a new tab)"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+              <a href="https://twitter.com" target="_blank" rel="noopener"
+                  aria-label="Visit our Twitter page(opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+              <a href="https://youtube.com" target="_blank" rel="noopener"
+                  aria-label="Visit our Youtube page(opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+          </li>
+          <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener"
+                  aria-label="Visit our Instagram page(opens in a new tab)"><i class="fab fa-instagram"></i></a>
+          </li>
+      </ul>
+      <p class="footer-copyright">
+          Copyright @ TheCupCakeFactory 2021
+      <p>
+  </footer>
+
 </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

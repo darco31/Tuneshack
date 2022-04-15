@@ -6,6 +6,7 @@
     --watermelon: #ff3b3f;
     --ink: #062f4f;
     --white: #ffffff;
+    --wine: #36232c;
   }
 
 * {
@@ -19,6 +20,10 @@ body {
     background-color: var(--ink);
 }
 
+.navbar {
+  background-color: var(--watermelon);
+}
+
 .list-item {
   color: var(--watermelon);
 }
@@ -29,4 +34,37 @@ body {
 
 .list-item {
   list-style-type: none;
+}
+
+/* Remove link decorations */
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+/* Footer styles */
+/* social icons from font awesome */
+#social-contact {
+  background-color: var(--watermelon);
+}
+.social-networks {
+  margin-top: 200px;
+  text-align: center;
+}
+.social-networks>li {
+  display: inline;
+
+}
+.social-networks i {
+  font-size: 160%;
+  margin: 1%;
+  /* padding: 5%; */
+  color: #36232c;
+}
+.footer-copyright {
+  font-size: 1.1rem;
+  padding: 10px;
+  text-align: center;
+  /* margin-bottom: 40px; */
+  color: #36232c;
 }
