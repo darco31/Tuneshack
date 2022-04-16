@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DeleteView, CreateView, UpdateView
+from django.views.generic import ListView, DeleteView, CreateView, UpdateView, DeleteView
 from .models import Post
 from .forms import PostForm, EditForm
 
@@ -32,3 +32,9 @@ class EditPost(UpdateView):
     form_class = EditForm
     template_name = 'edit_post.html'
     # fields = ['title', 'body']
+
+
+class DeletePost(DeleteView):
+
+    model = Post
+    template_name = 'delete_post.html'
