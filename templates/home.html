@@ -7,15 +7,17 @@
 <h1 class="head">Post</h1>
 
 <ul class="list-item">
-{% for post in object_list %}
+    {% for post in object_list %}
 
-    <li><a href="{% url 'post-detail' post.pk %}" class="post-detail">{{ post.title }}</a> - {{ post.author.first_name }}
-        {{ post.author.last_name }}<br>
-        <small><a href="{% url 'edit_post' post.pk %}">Edit</a></small><br>
-    {{ post.body }}</li>
+    <li><a href="{% url 'post-detail' post.pk %}" class="post-detail">{{ post.title }}</a> - <p class="author-name">{{ post.author.first_name }}
+            {{ post.author.last_name }}</p>
+        {{ post.body }}</li>
+    <small><a href="{% url 'edit_post' post.pk %}">Edit</a></small>
+    <br>
 
 
-{% endfor %}
+
+    {% endfor %}
 </ul>
 
 

@@ -7,72 +7,93 @@
     --ink: #062f4f;
     --white: #ffffff;
     --wine: #36232c;
-  }
+}
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
-  }
+}
 
 body {
     background-color: var(--ink);
 }
+
 /* Nav styles */
 .navbar {
-  background-color: var(--watermelon);
-  margin-top: 20px;
+    background-color: var(--watermelon);
+    margin-top: 20px;
 }
 
 .navbar-brand {
-  color: var(--wine);
-  font-size: 2.8rem;
-  padding-left: 1rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+    color: var(--wine);
+    font-size: 2.8rem;
+    padding-left: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Title size for posts */
+
+.post-detail {
+    font-size: 1.4rem;
+    color: var(--watermelon);
+}
+
+.author-name {
+    font-size: 0.8rem;
 }
 
 .list-item {
-  color: var(--watermelon);
+    color: var(--white);
 }
 
 .head {
-  color: var(--white);
+    color: var(--white);
 }
 
 .list-item {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 /* Remove link decorations */
 a {
-  text-decoration: none;
-  font-size: 1.3rem;
+    text-decoration: none;
+    font-size: 1.3rem;
 }
 
 /* Footer styles */
 /* social icons from font awesome */
 #social-contact {
-  background-color: var(--watermelon);
-  margin-top: 135px;
+    background-color: var(--watermelon);
+    margin-top: 135px;
 }
+
 .social-networks {
-  text-align: center;
+    text-align: center;
 }
+
 .social-networks>li {
-  display: inline;
+    display: inline;
 
 }
+
 .social-networks i {
-  font-size: 160%;
-  margin: 1%;
-  /* padding: 5%; */
-  color: #36232c;
+    font-size: 160%;
+    margin: 1%;
+    /* padding: 5%; */
+    color: #36232c;
 }
+
 .footer-copyright {
-  font-size: 1.1rem;
-  padding: 10px;
-  text-align: center;
-  color: #36232c;
+    font-size: 1.1rem;
+    padding: 10px;
+    text-align: center;
+    color: #36232c;
+}
+
+
+form {
+    color: aqua;
 }

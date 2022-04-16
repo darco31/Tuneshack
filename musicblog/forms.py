@@ -24,7 +24,10 @@ class PostForm(forms.ModelForm):
 
 
 class EditForm(forms.ModelForm):
-
+    """
+    Add form to Dit the posts and apply styling with
+    Bootstrap
+    """
     class Meta:
         model = Post
         fields = (
@@ -32,12 +35,8 @@ class EditForm(forms.ModelForm):
             'body',
         )
 
-        """
-        Add form control and placeholder text below from bootstrap
-        """
-
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Put your title here!!'}),
             # 'author': forms.Select(attrs={'class': 'form-control'}),
-            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Express yourself'}),
+             'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Express yourself'}),
         }
