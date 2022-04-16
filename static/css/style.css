@@ -38,24 +38,37 @@ body {
 
 .post-detail {
     font-size: 1.4rem;
-    color: var(--watermelon);
+    color: var(--wine);
 }
 
 .author-name {
     font-size: 0.8rem;
+    color: var(--wine);
 }
 
 .list-item {
-    color: var(--white);
+    color: var(--wine);
 }
 
 .head {
     color: var(--white);
+    text-align: center;
+}
+
+.edit {
+    color: var(--white);
+    text-align: center;
 }
 
 .list-item {
     list-style-type: none;
+    padding: 0;
 }
+
+.card {
+    margin-bottom: 20px;
+}
+
 
 /* Remove link decorations */
 a {
@@ -91,9 +104,4 @@ a {
     padding: 10px;
     text-align: center;
     color: #36232c;
-}
-
-
-form {
-    color: aqua;
 }
