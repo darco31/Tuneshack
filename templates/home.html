@@ -1,33 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- {% for post in object_list %}
-<div class="card text-center my-4">
-    <ul class="list-item">
-
-        <div class="card-header">
-            <a href="{% url 'post-detail' post.pk %}" class="post-detail">{{ post.title }}</a>
-        </div>
-        <div class="card-body">
-            <li>
-                <p class="author-name">By: {{ post.author.first_name }}
-                    {{ post.author.last_name }}</p>
-                {{ post.body }}
-            </li>
-            <br>
-        
-            <small><a href="{% url 'edit_post' post.pk %}">Edit</a></small>
-            <br>
-            <small><a href="{% url 'delete_post' post.pk %}">Delete</a></small>
-        </div>
-        {% endfor %}
-    </ul>
-</div> -->
 
 {% for post in object_list %}
 <div class="container-post">
     <a class="post-link" href="{% url 'post-detail' post.pk %}">
-        <h3>{{ post.title }}</h3>
+        <h3 class="post-title">{{ post.title }}</h3>
     </a>
     <div class="post-content">
         <ul>

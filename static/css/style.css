@@ -120,13 +120,14 @@ a {
     text-decoration: none;
 }
 
-ul {
-    text-decoration: none;
-}
-
 .container-post {
+    text-align: center;
     margin-top: 2rem;
-    padding-top: 2rem;
+    padding: 2rem;
     background-color: #ffffff;
     border-radius: 10px;
+}
+
+.post-author {
+    list-style-type: none;
 }
