@@ -7,6 +7,10 @@
 <div class="mx-5">
     <h1 class="head my-2">Delete Post</h1>
     <h3>Delete : {{ post.title }}</h3>
+
+    <strong>
+        <p>Are you sure would like to delete this post</p>
+    </strong>
     <form method="post">
         {% csrf_token %}
 
