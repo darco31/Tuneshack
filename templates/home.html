@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<!-- {% for post in object_list %}
 <div class="card text-center my-4">
     <ul class="list-item">
-        {% for post in object_list %}
+
         <div class="card-header">
             <a href="{% url 'post-detail' post.pk %}" class="post-detail">{{ post.title }}</a>
         </div>
@@ -15,28 +15,30 @@
                 {{ post.body }}
             </li>
             <br>
-            <!-- <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+        
             <small><a href="{% url 'edit_post' post.pk %}">Edit</a></small>
             <br>
             <small><a href="{% url 'delete_post' post.pk %}">Delete</a></small>
         </div>
         {% endfor %}
     </ul>
+</div> -->
+
+{% for post in object_list %}
+<div class="container-post">
+    <a class="post-link" href="{% url 'post-detail' post.pk %}">
+        <h3>{{ post.title }}</h3>
+    </a>
+    <div class="post-content">
+        <ul>
+            <li class="post-author">
+                <p class="author-name">By: {{ post.author.first_name }}
+                    {{ post.author.last_name }}</p>
+            </li>
+        </ul>
+    </div>
 </div>
-
-<!-- <h1 class="head">Post</h1>
-
-<ul class="list-item">
-    {% for post in object_list %}
-
-    <li><a href="{% url 'post-detail' post.pk %}" class="post-detail">{{ post.title }}</a> - <p class="author-name">{{ post.author.first_name }}
-            {{ post.author.last_name }}</p>
-        {{ post.body }}</li>
-    <small><a href="{% url 'edit_post' post.pk %}">Edit</a></small>
-    <br>
-    {% endfor %}
-</ul> -->
+{% endfor %}
 
 
 {% endblock %}

@@ -5,13 +5,13 @@
 
 <h1 class="head">{{ post.title }}</h1>
 
-<small>By: {{ post.author.first_name }} - <a href="{% url 'edit_post' post.pk %}">Edit</a><br></small>
+<small class="post-details-styles">By: {{ post.author.first_name }} <br></small>
 <hr>
 <br>
-{{ post.body }}
+<p class="post-details-styles">{{ post.body }}</p>
 
 <br><br>
-
+<a href="{% url 'edit_post' post.pk %}" class="btn btn-secondary">Edit</a>
 <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
 <button class="btn btn-secondary">Delete Post</button>
 
