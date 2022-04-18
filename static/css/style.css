@@ -34,7 +34,7 @@ hr {
 }
 
 main {
-    height: 65vh;
+    height: 100vh;
 }
 
 /* Nav styles */
@@ -221,4 +221,22 @@ button {
 .delete_post_home {
     color: var(--watermelon);
     padding: 1rem;
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 600px) {
+
+    .navbar-brand {
+        color: var(--wine);
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .nav-link {
+        color: var(--wine);
+        margin-left: 7px;
+        font-size: 1rem;
+    }
 }

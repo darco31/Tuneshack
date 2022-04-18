@@ -5,7 +5,7 @@
 
 <h1 class="head">{{ post.title }}</h1>
 <div class="container-post">
-    <small class="post-author-styles">By: {{ post.author.first_name }} <br></small>
+    <small class="post-author-styles">By: {{ post.author.first_name }} - {{ post.created_on }}<br></small>
     <hr>
     <br>
     <p class="post-details-styles">{{ post.body }}</p>
