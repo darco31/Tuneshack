@@ -4,7 +4,7 @@
 {% block content %}
 
 
-<div class="mx-5">
+<!-- <div class="mx-5">
     <h1 class="head my-2">Delete Post</h1>
     <div class="container-post">
         <h3>Delete : {{ post.title }} ?</h3>
@@ -15,14 +15,50 @@
         <form method="post">
             {% csrf_token %}
 
-            <!-- django form system -->
-
-            <a href="{% url 'delete_post' post.pk %}" class="delete_post_home">Delete</a>
+          
+            <button class="btn btn-danger">Delete</button>
             <br><br>
             <a href="{% url 'home' %}" class="back_post_home">Back</a>
-
     </div>
+</div> -->
 
+
+<div class="mx-5">
+    <h1 class="head my-2">Delete Post</h1>
+    <div class="container-post">
+        <h3>Delete : {{ post.title }} ?</h3>
+        <form method="post">
+            {% csrf_token %}
+
+            <!-- django form system -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                Delete
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Delete Post</h5>
+                        </div>
+                        <div class="modal-body">
+                            <strong>
+                                <p>Are you sure would like to delete this post</p>
+                            </strong>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <a href="{% url 'home' %}" class="back_post_home">Back</a>
+    </div>
 </div>
 
 {% endblock %}
