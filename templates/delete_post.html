@@ -27,6 +27,7 @@
     <h1 class="head my-2">Delete Post</h1>
     <div class="container-post">
         <h3>Delete : {{ post.title }} ?</h3>
+        <p>{{ post.body }}</p>
         <form method="post">
             {% csrf_token %}
 

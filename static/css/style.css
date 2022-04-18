@@ -26,7 +26,7 @@ h3,
 p,
 small {
     color: var(--ink);
-    text-align: center;
+    /* text-align: center; */
 }
 
 hr {
@@ -104,7 +104,7 @@ main {
 
 .post-details-styles {
     color: var(--wine);
-    text-align: center;
+    /* text-align: center; */
 }
 
 .author-name {
