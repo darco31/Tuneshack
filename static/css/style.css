@@ -18,6 +18,7 @@
 
 body {
     background-color: var(--ink);
+    height: 100vh;
 }
 
 /* Generic styles */
@@ -30,6 +31,10 @@ small {
 
 hr {
     color: black;
+}
+
+main {
+    height: 65vh;
 }
 
 /* Nav styles */
@@ -48,6 +53,16 @@ hr {
 
 .nav-link {
     color: var(--wine);
+    margin-left: 5px;
+}
+
+.navbar-toggler {
+    border-color: var(--wine);
+    border-width: 3px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54, 35, 44, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /* Title size for posts */
@@ -67,6 +82,12 @@ hr {
 
 .post-title {
     color: var(--wine);
+}
+
+.post-title:hover {
+    font-size: 2rem;
+    color: var(--watermelon);
+    transition-delay: 0.3s;
 }
 
 .post-details-styles {
@@ -113,7 +134,8 @@ a {
 /* social icons from font awesome */
 #social-contact {
     background-color: var(--watermelon);
-    margin-top: 135px;
+    margin-top: auto;
+    width: 100%;
 }
 
 .social-networks {
