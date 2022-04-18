@@ -5,17 +5,17 @@
 
 
 <div class="mx-5">
-<h1 class="head my-2">Update Post</h1>
+    <h1 class="head my-2">Update Post</h1>
 
-<form method="post">
-{% csrf_token %}
+    <form method="post">
+        {% csrf_token %}
 
-<!-- django form system -->
-{{ form.as_p }}
-<button class="btn btn-secondary">Update</button>
-<br><br>
-<a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+        <!-- django form system -->
+        {{ form.as_p }}
+        <button class="edit_button_update">Update</button>
+        <br><br>
+        <a href="{% url 'home' %}" class="back_button">Back</a>
 
-{% endblock %}
+        {% endblock %}
 
 </div>

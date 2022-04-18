@@ -6,21 +6,22 @@
 
 <div class="mx-5">
     <h1 class="head my-2">Delete Post</h1>
-    <h3>Delete : {{ post.title }} ?</h3>
+    <div class="container-post">
+        <h3>Delete : {{ post.title }} ?</h3>
 
-    <strong>
-        <p>Are you sure would like to delete this post</p>
-    </strong>
-    <form method="post">
-        {% csrf_token %}
+        <strong>
+            <p>Are you sure would like to delete this post</p>
+        </strong>
+        <form method="post">
+            {% csrf_token %}
 
-        <!-- django form system -->
+            <!-- django form system -->
 
-        <button class="btn btn-secondary">Delete Post</button>
-        <br><br>
-        <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+            <a href="{% url 'delete_post' post.pk %}" class="delete_post_home">Delete</a>
+            <br><br>
+            <a href="{% url 'home' %}" class="back_post_home">Back</a>
 
-
+    </div>
 
 </div>
 

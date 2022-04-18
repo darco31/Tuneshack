@@ -4,15 +4,15 @@
 {% block content %}
 
 <h1 class="head">{{ post.title }}</h1>
-
-<small class="post-details-styles">By: {{ post.author.first_name }} <br></small>
-<hr>
-<br>
-<p class="post-details-styles">{{ post.body }}</p>
-
+<div class="container-post">
+    <small class="post-author-styles">By: {{ post.author.first_name }} <br></small>
+    <hr>
+    <br>
+    <p class="post-details-styles">{{ post.body }}</p>
+</div>
 <br><br>
-<a href="{% url 'edit_post' post.pk %}" class="btn btn-secondary">Edit</a>
-<a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
-<button class="btn btn-secondary">Delete Post</button>
+<a href="{% url 'edit_post' post.pk %}" class="edit_button">Edit</a>
+<a href="{% url 'home' %}" class="back_button">Back</a>
+<a href="{% url 'delete_post' post.pk %}" class="delete_button">Delete</a>
 
 {% endblock %}
