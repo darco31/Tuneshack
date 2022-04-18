@@ -45,6 +45,10 @@ body {
     color: var(--wine);
 }
 
+.post-title {
+    color: var(--wine);
+}
+
 .post-details-styles {
     color: var(--white);
     text-align: center;
@@ -130,4 +134,9 @@ a {
 
 .post-author {
     list-style-type: none;
+}
+
+h3,
+p {
+    color: var(--white);
 }
