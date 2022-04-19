@@ -11,8 +11,11 @@
     <p class="post-details-styles">{{ post.body }}</p>
 </div>
 <br><br>
+{% if user.is_authenticated %}
 <a href="{% url 'edit_post' post.pk %}" class="edit_button">Edit</a>
-<a href="{% url 'home' %}" class="back_button">Back</a>
-<a href="{% url 'delete_post' post.pk %}" class="delete_button">Delete</a>
 
+<a href="{% url 'delete_post' post.pk %}" class="delete_button">Delete</a>
+{% endif %}
+
+<a href="{% url 'home' %}" class="back_button">Back</a>
 {% endblock %}
