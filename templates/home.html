@@ -10,12 +10,13 @@
     <div class="post-content">
         <ul>
             <li class="post-author">
-                <p class="author-name">By: {{ post.author.first_name }}
-                    {{ post.author.last_name }}</p>
+                <p class="author-name">By: {{ post.author }}</p>
             </li>
         </ul>
+        {% if user.is_authenticated %}
         <a href="{% url 'edit_post' post.pk %}" class="edit_button_home">Edit</a>
         <a href="{% url 'delete_post' post.pk %}" class="delete_button_home">Delete</a>
+        {% endif %}
     </div>
 </div>
 {% endfor %}

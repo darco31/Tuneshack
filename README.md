@@ -31,3 +31,14 @@
 ### Design
 
 #### Wireframes
+
+# Technology
+
+# Testing
+
+# Deployment
+
+# Credits
+
+### Crispy forms instruction
+* https://www.geeksforgeeks.org/styling-django-forms-with-django-crispy-forms/
