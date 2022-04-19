@@ -33,6 +33,10 @@ hr {
     color: black;
 }
 
+li {
+    color: var(--white);
+}
+
 main {
     height: 100vh;
 }
