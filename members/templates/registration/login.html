@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Login}{% endblock %}
+{% block title %}Login{% endblock %}
 
 {% block content %}
 
@@ -9,11 +9,16 @@
 
     <form method="post">
         {% csrf_token %}
+        <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
 
-        <!-- django form system -->
-        {{ form.as_p }}
-        <button class="btn btn-secondary">Login</button>
-
+        <button class="btn btn-secondary login">Login</button>
 </div>
 
 {% endblock %}
