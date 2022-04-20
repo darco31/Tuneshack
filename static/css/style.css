@@ -26,6 +26,7 @@ h3,
 p,
 small {
     color: var(--ink);
+    text-align: left;
 }
 
 hr {
@@ -101,6 +102,7 @@ main {
 
 .post-title {
     color: var(--wine);
+    text-align: center;
 }
 
 .post-title:hover {
