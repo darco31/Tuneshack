@@ -2,7 +2,7 @@
 {% block title %}Delete Your Posts{% endblock %}
 
 {% block content %}
-
+{% if user.is_authenticated %}
 <div class="mx-5">
     <h1 class="head-delete my-2">Delete Post</h1>
     <div class="container-post">
@@ -41,5 +41,26 @@
             <a href="{% url 'home' %}" class="back_post_home">Back</a>
     </div>
 </div>
+
+{% else %}
+
+<div class="container-auth">
+    <h1 class="head my-2">Login Here</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button class="login-button">Login</button>
+</div>
+
+{% endif %}
 
 {% endblock %}

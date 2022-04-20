@@ -3,7 +3,7 @@
 
 {% block content %}
 
-
+{% if user.is_authenticated %}
 <div class="container-edit mx-5">
     <h1 class="head my-2">Update Post</h1>
 
@@ -15,7 +15,26 @@
         <button class="edit_button_update">Update</button>
         <br><br>
         <a href="{% url 'home' %}" class="back_button">Back</a>
-
-        {% endblock %}
-
 </div>
+
+{% else %}
+
+<div class="container-auth">
+    <h1 class="head my-2">Login Here</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button class="login-button">Login</button>
+</div>
+
+{% endif %}
+{% endblock %}
