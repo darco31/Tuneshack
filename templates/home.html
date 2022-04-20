@@ -3,14 +3,16 @@
 {% block content %}
 
 {% for post in object_list %}
-<div class="container-post">
+<div class="container-post col-6">
     <a class="post-link" href="{% url 'post-detail' post.pk %}">
         <h3 class="post-title">{{ post.title }}</h3>
     </a>
     <div class="post-content">
         <ul>
             <li class="post-author">
-                <p class="author-name">By: {{ post.author }}</p>
+                <p class="author-name">By: {{ post.author }} <br>
+                    {{ post.body|slice:":150" }}
+                </p>
             </li>
         </ul>
         {% if user.is_authenticated %}

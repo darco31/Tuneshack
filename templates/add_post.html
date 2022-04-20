@@ -4,16 +4,16 @@
 {% block content %}
 
 
-<div class="mx-5">
-<h1 class="head my-2">Add Post</h1>
+<div class="container-edit mx-5">
+    <h1 class="head my-2">Add Post</h1>
 
-<form method="post">
-{% csrf_token %}
+    <form method="post">
+        {% csrf_token %}
 
-<!-- django form system -->
-{{ form.as_p }}
-<button class="btn btn-secondary">Submit</button>
+        <!-- django form system -->
+        {{ form.as_p }}
+        <button class="btn btn-secondary">Submit</button>
 
-{% endblock %}
+        {% endblock %}
 
 </div>

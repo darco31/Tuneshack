@@ -3,28 +3,8 @@
 
 {% block content %}
 
-
-<!-- <div class="mx-5">
-    <h1 class="head my-2">Delete Post</h1>
-    <div class="container-post">
-        <h3>Delete : {{ post.title }} ?</h3>
-
-        <strong>
-            <p>Are you sure would like to delete this post</p>
-        </strong>
-        <form method="post">
-            {% csrf_token %}
-
-          
-            <button class="btn btn-danger">Delete</button>
-            <br><br>
-            <a href="{% url 'home' %}" class="back_post_home">Back</a>
-    </div>
-</div> -->
-
-
 <div class="mx-5">
-    <h1 class="head my-2">Delete Post</h1>
+    <h1 class="head-delete my-2">Delete Post</h1>
     <div class="container-post">
         <h3>Delete : {{ post.title }} ?</h3>
         <p>{{ post.body }}</p>
