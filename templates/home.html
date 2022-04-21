@@ -10,7 +10,7 @@
     <div class="post-content">
         <ul>
             <li class="post-author">
-                <p class="author-name">By: {{ post.author }} <br>
+                <p class="author-name">By: {{ post.author|title}} <br><br>
                     {{ post.body|slice:":150" }}
                 </p>
             </li>

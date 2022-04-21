@@ -253,7 +253,14 @@ button {
 .container-auth {
     background-color: #ff3b3f;
     padding: 40px;
-    margin-top: 90px;
+    margin: 40px 0 90px 0;
+    border-radius: 10px;
+}
+
+.container-auth-login {
+    background-color: #ff3b3f;
+    padding: 40px;
+    margin: 40px 0 140px 0;
     border-radius: 10px;
 }
 
@@ -423,13 +430,10 @@ img {
 /* social icons from font awesome */
 
 footer {
-    height: 150px;
-    margin-top: auto;
-    width: 100%;
+    position: static;
+    left: 0;
+    bottom: 0;
     background-color: var(--watermelon);
-    color: #fff;
-    align-items: center;
-    text-align: center;
 }
 
 .social-networks {
