@@ -128,7 +128,7 @@ main {
 }
 
 .author-name {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--wine);
 }
 
@@ -143,7 +143,7 @@ main {
 }
 
 .head-delete {
-    color: var(--white);
+    color: var(--wine);
     text-align: center;
 }
 
@@ -171,50 +171,6 @@ main {
 a {
     text-decoration: none;
     font-size: 1.3rem;
-}
-
-/* Footer styles */
-/* social icons from font awesome */
-
-footer {
-    height: 150px;
-    margin-top: auto;
-    width: 100%;
-    background-color: var(--watermelon);
-    color: #fff;
-    align-items: center;
-    text-align: center;
-}
-
-.social-networks {
-    text-align: center;
-}
-
-.social-networks>li {
-    display: inline;
-
-}
-
-.social-networks i {
-    font-size: 160%;
-    margin: 1%;
-    color: #36232c;
-}
-
-.social-networks i:hover {
-    color: var(--white);
-}
-
-.footer-copyright {
-    font-size: 1.1rem;
-    padding: 10px;
-    text-align: center;
-    color: #36232c;
-}
-
-.post-link {
-    color: var(--wine);
-    text-decoration: none;
 }
 
 /* Container on home page style */
@@ -292,36 +248,6 @@ button {
     opacity: 0.8;
 }
 
-/* Media queries for small screens */
-@media screen and (max-width: 576px) {
-
-    .navbar-brand {
-        color: var(--wine);
-        font-size: 1.3rem;
-        padding-left: 0.5rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-
-    .nav-link {
-        color: var(--wine);
-        margin-left: 7px;
-        font-size: 0.9rem;
-    }
-
-    .navbar-toggler {
-        border-color: var(--wine);
-        border-width: 2px;
-        margin-left: 90px;
-        padding: 1px;
-    }
-
-    h1 {
-        font-size: 1.3rem;
-        margin-top: 0.5rem;
-    }
-}
-
 /* Authentication pages styles */
 
 .container-auth {
@@ -341,13 +267,7 @@ button {
     display: none;
 }
 
-.container-edit {
-    background-color: var(--white);
-    margin-top: 2rem;
-    padding: 5px;
-    width: 90%;
-    border-radius: 10px;
-}
+/* Images style */
 
 img {
     display: flex;
@@ -423,4 +343,152 @@ img {
     border: none;
     border-radius: 5px;
     padding: 5px;
+}
+
+.edit_button_update {
+    font-size: 1.3rem;
+}
+
+
+/* Add post page */
+
+.container-edit {
+    background-color: var(--white);
+    margin: 2rem 0 2rem 0;
+    padding: 5px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.add_post_btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.add_post_btn:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+/* Delete post page */
+
+.container_delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.delete_btn,
+.delete_btn_back {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.delete_btn:hover,
+.delete_btn_back:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+.delete_btn {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/* View post logged out */
+
+.login-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.login-btn:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+/* Footer styles */
+/* social icons from font awesome */
+
+footer {
+    height: 150px;
+    margin-top: auto;
+    width: 100%;
+    background-color: var(--watermelon);
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    color: #36232c;
+}
+
+.social-networks i:hover {
+    color: var(--white);
+}
+
+.footer-copyright {
+    font-size: 1.1rem;
+    padding: 10px;
+    text-align: center;
+    color: #36232c;
+}
+
+.post-link {
+    color: var(--wine);
+    text-decoration: none;
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 576px) {
+
+    .navbar-brand {
+        color: var(--wine);
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .nav-link {
+        color: var(--wine);
+        margin-left: 7px;
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler {
+        border-color: var(--wine);
+        border-width: 2px;
+        margin-left: 90px;
+        padding: 1px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+    }
 }
