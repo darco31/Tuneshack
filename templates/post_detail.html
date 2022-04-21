@@ -15,9 +15,11 @@
 
 <div class="container_buttons">
     {% if user.is_authenticated %}
+    {% if user.id == post.author.id%}
     <a href="{% url 'edit_post' post.pk %}" class="likes_edit_button">Edit</a>
 
     <a href="{% url 'delete_post' post.pk %}" class="likes_delete_button">Delete</a>
+    {% endif %}
     {% endif %}
 
     <a href="{% url 'home' %}" class="likes_back_button">Back</a>

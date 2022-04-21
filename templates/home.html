@@ -16,8 +16,10 @@
             </li>
         </ul>
         {% if user.is_authenticated %}
+        {% if user.id == post.author.id%}
         <a href="{% url 'edit_post' post.pk %}" class="edit_button_home">Edit</a>
         <a href="{% url 'delete_post' post.pk %}" class="delete_button_home">Delete</a>
+        {% endif %}
         {% endif %}
     </div>
 </div>
