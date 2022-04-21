@@ -85,6 +85,13 @@ main {
     box-shadow: none;
 }
 
+/* Edit page styles */
+
+.edit_container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Title size for posts */
 
 .post-detail {
@@ -117,7 +124,7 @@ main {
 
 .post-head {
     margin-top: 10px;
-    color: var(--white);
+    color: var(--wine);
 }
 
 .author-name {
@@ -347,4 +354,73 @@ img {
     flex-direction: column;
     margin: auto;
     height: 150px;
+}
+
+/* Likes styles */
+
+.num_likes {
+    color: var(--watermelon);
+    margin-bottom: 30px;
+}
+
+.container_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.likes_edit_button,
+.likes_delete_button,
+.likes_back_button {
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.likes_edit_button:hover,
+.likes_delete_button:hover,
+.likes_back_button:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+.heart {
+    color: var(--watermelon);
+    background-color: var(--ink);
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+}
+
+.heart:hover {
+    font-size: 30px;
+}
+
+/* Edit post page */
+
+.edit_container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.edit_button_update,
+.edit_button_back {
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.edit_button_update:hover,
+.edit_button_back:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+.edit_button_update,
+.edit_button_back,
+.likes_edit_button,
+.likes_delete_button,
+.likes_back_button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
 }

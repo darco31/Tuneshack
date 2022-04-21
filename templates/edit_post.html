@@ -12,11 +12,15 @@
 
         <!-- django form system -->
         {{ form.as_p }}
-        <button class="edit_button_update">Update</button>
-        <br><br>
-        <a href="{% url 'home' %}" class="back_button">Back</a>
+
 </div>
 
+<div class="edit_container">
+
+    <button class="edit_button_update">Update</button>
+    <a href="{% url 'home' %}" class="edit_button_back">Back</a>
+
+</div>
 {% else %}
 
 <div class="container-auth">
