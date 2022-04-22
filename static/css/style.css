@@ -44,6 +44,11 @@ main {
     flex-direction: column;
     align-items: center;
     align-content: center;
+
+}
+
+.test {
+    min-height: 82vh;
 }
 
 /* Continue reading style */
@@ -486,15 +491,30 @@ footer {
 
     .container-post {
         padding: 0;
+        margin: 20px;
     }
 
     ul {
         padding: 0;
     }
 
+    p {
+        text-align: center;
+    }
+
     .post-title {
         font-size: 0.9rem;
         margin-top: 1rem;
+    }
+
+    .post-head {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .post-author-styles {
+        font-size: 0.9rem;
+        text-align: center;
     }
 
     .continue_button {
@@ -554,6 +574,20 @@ footer {
         color: var(--wine);
         text-decoration: none;
     }
-}
 
-@media screen and (max-width: 800px)
+    .edit_button_home {
+        font-size: 0.9rem;
+    }
+
+    .edit_button_update,
+    .edit_button_back,
+    .likes_edit_button,
+    .likes_delete_button,
+    .likes_back_button {
+        background-color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+}
