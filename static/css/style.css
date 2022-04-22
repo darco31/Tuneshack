@@ -7,6 +7,7 @@
     --ink: #062f4f;
     --white: #ffffff;
     --wine: #36232c;
+    --continue: #147c14;
 }
 
 * {
@@ -43,6 +44,19 @@ main {
     flex-direction: column;
     align-items: center;
     align-content: center;
+}
+
+/* Continue reading style */
+.continue_button {
+    background-color: var(--ink);
+    color: var(--watermelon);
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.continue_button:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
 }
 
 /* Nav styles */
