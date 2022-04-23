@@ -451,6 +451,18 @@ img {
     font-size: 1.2rem;
 }
 
+.comment-alert {
+    color: var(--white);
+}
+
+.comment-alert>a {
+    color: var(--white);
+}
+
+.comment-alert>a:hover {
+    color: var(--watermelon);
+}
+
 /* View post logged out */
 
 .login-btn {

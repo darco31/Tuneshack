@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Post a Comment{% endblock %}
+
+{% block content %}
+
+
+<div class="container-edit mx-5">
+    <h1 class="head my-2">Add Comment</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <!-- django form system -->
+        {{ form.as_p }}
+</div>
+<button class="add_post_btn">Comment</button>
+
+{% endblock %}

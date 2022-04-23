@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post
-from .forms import PostForm, EditForm
+from .models import Post, Comment
+from .forms import PostForm, EditForm, AddComment
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 # Create your views here.
@@ -37,7 +37,7 @@ def LikesPost(request, pk):
         post.likes.remove(request.user)
     else:
         post.likes.add(request.user)
- 
+
     return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
 
 
@@ -49,12 +49,24 @@ class AddPost(CreateView):
     # fields = '__all__'
 
 
+class AddComment(CreateView):
+
+    model = Comment
+    form_class = AddComment
+    template_name = 'add_comment.html'
+
+    def form_valid(self, form):
+        form.instance.post_id = self.kwargs['pk']
+        return super().form_valid(form)
+
+    success_url = reverse_lazy('home')
+
+
 class EditPost(UpdateView):
 
     model = Post
     form_class = EditForm
     template_name = 'edit_post.html'
-    # fields = ['title', 'body']
 
 
 class DeletePost(DeleteView):
