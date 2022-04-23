@@ -429,6 +429,28 @@ img {
     font-size: 1.3rem;
 }
 
+/* Comments section styles */
+
+.comment-head {
+    color: var(--white);
+    padding: 5px;
+}
+
+.comments-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.comment-name {
+    font-style: italic;
+}
+
+.comment-body {
+    font-size: 1.2rem;
+}
+
 /* View post logged out */
 
 .login-btn {

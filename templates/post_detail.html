@@ -16,13 +16,11 @@
 <div class="container_buttons">
     {% if user.is_authenticated %}
     {% if user.id == post.author.id%}
-    <a href="{% url 'edit_post' post.pk %}" class="likes_edit_button">Edit</a>
+    <a href="{% url 'edit_post' post.pk %}" class="likes_edit_button">Edit Post</a>
 
-    <a href="{% url 'delete_post' post.pk %}" class="likes_delete_button">Delete</a>
+    <a href="{% url 'delete_post' post.pk %}" class="likes_delete_button">Delete Post</a>
     {% endif %}
     {% endif %}
-
-    <a href="{% url 'home' %}" class="likes_back_button">Back</a>
 </div>
 <!-- https://dev.to/radualexandrub/how-to-add-like-unlike-button-to-your-django-blog-5gkg -->
 
@@ -36,8 +34,32 @@
     <button type="submit" name="blogpost_id" value="{{object.id}}" class="heart"><i class="fas fa-heart"></i></button>
     {% endif %}
 </form>
+
 {% else %}
 <a class="login-btn" href="{% url 'login' %}?next={{request.path}}">Log in to like this article!</a><br>
 {% endif %}
 <strong class="num_likes">{{ number_of_likes }} Like{{ number_of_likes|pluralize }}</strong>
+<h2 class="comment-head">Comments</h2>
+{% if not post.comments.all %}
+
+No comments Yet... <a href="#">Add one here</a>
+
+{% else %}
+
+{% for comment in post.comments.all %}
+
+<div class="container comments-container">
+    <div class="comments">
+        <div class="comments-content">
+            <h4 class="comment-name">{{ comment.name }}</h4>
+            <p class="comment-date"> {{ comment.created_on }}</p>
+            <p class="comment-body"> {{ comment.body }} </p>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+{% endif %}
+
+
 {% endblock %}
