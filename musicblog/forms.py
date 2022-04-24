@@ -42,7 +42,7 @@ class EditForm(forms.ModelForm):
 
 
 class AddComment(forms.ModelForm):
-   
+
     class Meta:
         model = Comment
         fields = (

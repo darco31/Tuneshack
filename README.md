@@ -12,15 +12,21 @@
     * [User Stories](#Userstories)
 
 3. [Features](#Features)
-    * [Design](#Design)
 
-4. [Technology Used In Design](#Technology-Used-In-Design)
+4. [WireFrames](#Wireframes)
 
-5. [Testing](#Testing)
+5. [Technology Used In Design](#Technology-Used-In-Design)
 
-6. [Deployment](#Deployment)
+5. [Database](#Database)
 
-7. [Credits](#Credits)
+6. [Testing](#Testing)
+    * HTML Validator
+    * CSS Validator
+    * PEP 8
+
+7. [Deployment](#Deployment)
+
+8. [Credits](#Credits)
 
 # The TuneShack
 
@@ -30,6 +36,10 @@
 # User Experience
 
 ## Project goals
+
+* The overall goal of the project is to display my competency in being able to create a website/app using the Django framework in conjunction with Python, Javascript, HTML and CSS. 
+
+* The users of the site will be able to view posts made by all but only create , update and delete posts made by themselves once they have signed up and logged in. Once logged out they will only be able to comment and read posts. Users will be limited to their own content for any updates or removals.
 
 ## User Stories
 
@@ -50,15 +60,11 @@
 ### Sign up Page
 ![Home Page](static/img/signup.PNG)
 
-
-
-### Design
-
-Home Page
-
-
+#### [Back to content](#table-of-contents)
 
 ## Wireframes
+
+#### [Back to content](#table-of-contents)
 
 # Technology
 
@@ -82,8 +88,21 @@ Home Page
 * pytz==2022.1
 * sqlparse==0.4.2
 
+#### [Back to content](#table-of-contents)
 
 # Testing
+
+### HTML Validator
+
+### CSS Validator
+
+### PEP8
+
+## Lighthouse Scores
+
+
+
+#### [Back to content](#table-of-contents)
 
 # Deployment
 
