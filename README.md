@@ -9,6 +9,7 @@
 
 2. [User Experience](#UserExperience)
     * [Project Goals](#Project-goals)
+    * [User Stories](#Userstories)
 
 3. [Features](#Features)
     * [Design](#Design)
@@ -28,11 +29,36 @@
 
 # User Experience
 
+## Project goals
+
+## User Stories
+
 # Features
+
+### Home Page
+![Home Page](static/img/home.PNG)
+
+### Posts Page
+![Home Page](static/img/post_page.PNG)
+
+### Posts with Comments
+![Home Page](static/img/comment_likes.PNG)
+
+### Login Page
+![Home Page](static/img/login.PNG)
+
+### Sign up Page
+![Home Page](static/img/signup.PNG)
+
+
 
 ### Design
 
-#### Wireframes
+Home Page
+
+
+
+## Wireframes
 
 # Technology
 
