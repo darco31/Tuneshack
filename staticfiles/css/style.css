@@ -1,0 +1,627 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Color Variables */
+:root {
+    --watermelon: #ff3b3f;
+    --ink: #062f4f;
+    --white: #ffffff;
+    --wine: #36232c;
+    --continue: #147c14;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: var(--ink);
+}
+
+/* Generic styles */
+h3,
+p,
+small {
+    color: var(--ink);
+    text-align: left;
+}
+
+hr {
+    color: black;
+}
+
+li,
+label {
+    color: var(--wine)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+
+.test {
+    min-height: 82vh;
+}
+
+/* Continue reading style */
+.continue_button {
+    background-color: var(--ink);
+    color: var(--watermelon);
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.continue_button:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+/* Nav styles */
+.navbar {
+    background-color: var(--watermelon);
+    margin-top: 20px;
+}
+
+.navbar-brand {
+    color: var(--wine);
+    font-size: 2.8rem;
+    padding-left: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-brand:hover {
+    color: var(--white);
+}
+
+.nav-link {
+    color: var(--wine);
+    margin-left: 5px;
+}
+
+.nav-link:hover {
+    color: var(--white);
+}
+
+.navbar-toggler {
+    border-color: var(--wine);
+    border-width: 3px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54, 35, 44, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Edit page styles */
+
+.edit_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title size for posts */
+
+.post-detail {
+    font-size: 1.4rem;
+    color: var(--wine);
+}
+
+.post-author-styles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.9rem;
+    font-size: 1.2rem;
+    color: var(--wine);
+}
+
+.post-title {
+    color: var(--wine);
+    text-align: center;
+}
+
+.post-title:hover {
+    font-size: 2rem;
+    color: var(--watermelon);
+    transition-delay: 0.3s;
+}
+
+.post-details-styles {
+    color: var(--wine);
+}
+
+.post-head {
+    margin-top: 10px;
+    color: var(--wine);
+}
+
+.author-name {
+    font-size: 1rem;
+    color: var(--wine);
+}
+
+.list-item {
+    color: var(--wine);
+}
+
+.head {
+    color: var(--wine);
+    padding: 3px;
+    text-align: center;
+}
+
+.head-delete {
+    color: var(--wine);
+    text-align: center;
+}
+
+.edit {
+    color: var(--white);
+    text-align: center;
+}
+
+.list-item {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+/* Register/login sign up styles */
+
+.login {
+    margin-top: 10px;
+}
+
+/* Remove link decorations */
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+/* Container on home page style */
+
+.container-post {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.post-author {
+    list-style-type: none;
+}
+
+/* Button styles */
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    align-content: center;
+}
+
+.edit_button_update {
+    color: var(--watermelon);
+    background-color: var(--ink);
+    border: none;
+    font-size: 1.1rem;
+}
+
+.edit_button_update:hover {
+    color: var(--white);
+}
+
+.edit_button,
+.delete_button,
+.back_button {
+    color: var(--watermelon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.edit_button:hover,
+.delete_button:hover,
+.back_button:hover {
+    color: var(--white);
+}
+
+.edit_button_home,
+.delete_button_home,
+.delete_post_home {
+    color: var(--watermelon);
+    padding: 1rem;
+}
+
+.login-button,
+.signup-button {
+    background-color: var(--wine);
+    color: var(--white);
+    border: none;
+    padding: 6px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.login-button:hover,
+.signup-button:hover {
+    background-color: var(--wine);
+    opacity: 0.8;
+}
+
+/* Authentication pages styles */
+
+.container-auth {
+    background-color: #ff3b3f;
+    padding: 40px;
+    margin: 40px 0 90px 0;
+    border-radius: 10px;
+}
+
+.container-auth-login {
+    background-color: #ff3b3f;
+    padding: 40px;
+    margin: 40px 0 140px 0;
+    border-radius: 10px;
+}
+
+.form-group>label {
+    color: var(--wine);
+    padding: 5px;
+}
+
+#hint_id_username,
+#hint_id_password2 {
+    display: none;
+}
+
+/* Images style */
+
+img {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 150px;
+}
+
+/* Likes styles */
+
+.num_likes {
+    color: var(--watermelon);
+    margin-bottom: 30px;
+}
+
+.container_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.likes_edit_button,
+.likes_delete_button,
+.likes_back_button {
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.likes_edit_button:hover,
+.likes_delete_button:hover,
+.likes_back_button:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+.heart {
+    color: var(--watermelon);
+    background-color: var(--ink);
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+}
+
+.heart:hover {
+    font-size: 30px;
+}
+
+/* Edit post page */
+
+.edit_container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.edit_button_update,
+.edit_button_back {
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.edit_button_update:hover,
+.edit_button_back:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+.edit_button_update,
+.edit_button_back,
+.likes_edit_button,
+.likes_delete_button,
+.likes_back_button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.edit_button_update {
+    font-size: 1.3rem;
+}
+
+
+/* Add post page */
+
+.container-edit {
+    background-color: var(--white);
+    margin: 2rem 0 2rem 0;
+    padding: 5px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.add_post_btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.add_post_btn:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+/* Delete post page */
+
+.container_delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.delete_btn,
+.delete_btn_back {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.delete_btn:hover,
+.delete_btn_back:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+.delete_btn {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/* Comments section styles */
+
+.comment-head {
+    color: var(--white);
+    padding: 5px;
+}
+
+.comments-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.comment-name {
+    font-style: italic;
+}
+
+.comment-body {
+    font-size: 1.2rem;
+}
+
+.comment-alert {
+    color: var(--white);
+}
+
+.comment-alert>a {
+    color: var(--white);
+}
+
+.comment-alert>a:hover {
+    color: var(--watermelon);
+}
+
+/* View post logged out */
+
+.login-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--watermelon);
+    margin: 0 20px 20px 20px;
+}
+
+.login-btn:hover {
+    color: var(--watermelon);
+    opacity: 0.8;
+}
+
+/* Footer styles */
+/* social icons from font awesome */
+
+footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    background-color: var(--watermelon);
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    color: #36232c;
+}
+
+.social-networks i:hover {
+    color: var(--white);
+}
+
+.footer-copyright {
+    font-size: 1.1rem;
+    padding: 10px;
+    text-align: center;
+    color: #36232c;
+}
+
+.post-link {
+    color: var(--wine);
+    text-decoration: none;
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 400px) {
+
+    .container-post {
+        padding: 0;
+        margin: 20px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .post-title {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .post-head {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .post-author-styles {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .continue_button {
+        padding: 2px;
+        font-size: 10px;
+        border-radius: 3px;
+    }
+
+    .author-name {
+        display: none;
+    }
+
+    .navbar-brand {
+        color: var(--wine);
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .nav-link {
+        color: var(--wine);
+        margin-left: 7px;
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler {
+        border-color: var(--wine);
+        border-width: 2px;
+        margin-left: 90px;
+        padding: 1px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+    }
+
+    .social-networks i {
+        font-size: 100%;
+        margin: 4%;
+        color: #36232c;
+    }
+
+    .social-networks i:hover {
+        color: var(--white);
+    }
+
+    .footer-copyright {
+        font-size: 0.9rem;
+        padding: 10px;
+        text-align: center;
+        color: #36232c;
+    }
+
+    .post-link {
+        color: var(--wine);
+        text-decoration: none;
+    }
+
+    .edit_button_home {
+        font-size: 0.9rem;
+    }
+
+    .edit_button_update,
+    .edit_button_back,
+    .likes_edit_button,
+    .likes_delete_button,
+    .likes_back_button {
+        background-color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+}
