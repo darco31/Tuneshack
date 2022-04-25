@@ -6,6 +6,7 @@
 
 1. [Overview](#Overview)
     * [About](#about)
+    * [Scope](#Scope)
 
 2. [User Experience](#UserExperience)
     * [Project Goals](#Project-goals)
@@ -20,18 +21,42 @@
 5. [Database](#Database)
 
 6. [Testing](#Testing)
-    * HTML Validator
-    * CSS Validator
-    * PEP 8
+    * [HTML Validator](#HTML-Validator)
+    * [CSS Validator](#CSS_Validator)
+    * [PEP 8](#PEP8)
 
 7. [Deployment](#Deployment)
 
 8. [Credits](#Credits)
 
+9. [Issues](#Issues)
+
 # The TuneShack
 
 ### About
 * The Tuneshack is a blog website developed to encourage lovers of all types and genres of music to sign up and talk freely about their love of music, their favorite bands or the best concert they have ever been to. The blog can used to post dates and venues for upcoming concerts. Every body is welcome and encouraged to post and interact with each others posts weather leaving comments or just liking a post.
+
+### Scope
+
+* The initial scope of the project is to develop a website that is primarily used as a blog site for music lovers to use. There is future scope to extend the site to be more commercial in use i.e selling merchandise, tickets, bookings through third party sites.
+
+* The first release wil include:
+    - A home page for everyone to view posts and comment.
+    - A sign up page /system for new users.
+    - users can log in and comment and like posts.
+    - Once logged in a user can update or delete their posts.
+    - Authentication used to determine who is logged and who can post/update or delete.
+    - users can log out at any time.
+
+* Future development
+    - Nested comments and a like functionality
+    - Images included in comments
+    - Possibility of an online store
+    - Selling tickets through 3rd party official sites.
+    - Search functionality
+    - Email verification/password update
+    - Categories to pick from
+
 
 # User Experience
 
@@ -42,6 +67,35 @@
 * The users of the site will be able to view posts made by all but only create , update and delete posts made by themselves once they have signed up and logged in. Once logged out they will only be able to comment and read posts. Users will be limited to their own content for any updates or removals.
 
 ## User Stories
+
+### Sign Up
+
+* As a Site User I can sign up to the app so that I can login and make posts and comment/like other posts
+
+### Delete Posts
+
+* As a User I can delete my posts so that they can be removed if required
+
+### Edit a post
+
+* As a User I can delete my posts so that they can be removed if required
+
+### View a post
+
+* As a User I can view and click on posts so that I can read through them weather logged in or logged out
+
+### Like/unlike posts
+
+* As a User I can **like and unlike posts ** so that there is site interaction
+
+### Manage Posts
+
+* As a site owner I can manage users and their posts so that I can manage content if required
+
+### Make comments
+
+* As a user I can make comments so that give feedback to other posts
+
 
 # Features
 
@@ -100,8 +154,6 @@
 
 ## Lighthouse Scores
 
-
-
 #### [Back to content](#table-of-contents)
 
 # Deployment
@@ -154,6 +206,30 @@ I used the video tutorial provided by The Code Institute to create a Heroku acco
 - Use Manual deploy for a new build every time this button is clicked.
 - Once completed click View App
 
+### Updated as Heroku had a security breach and deployment was needed to be completed from the Github CLI.
+
+* Deploying your app to heroku
+1. Login to heroku and enter your details.
+command: heroku login -i
+2. Get your app name from heroku.
+command: heroku apps
+3. Set the heroku remote. (Replace <app_name> with your actual app name)
+command: heroku git:remote -a <app_name>
+4. Add, commit and push to github
+command: git add . && git commit -m "Deploy to Heroku via CLI"
+5. Push to both github and heroku
+command: git push origin main
+command: git push heroku main
+
+
+* MFA/2FA enabled?
+1. Click on Account Settings (under the avatar menu)
+2. Scroll down to the API Key section and click Reveal. Copy the key.
+3. Enter the command: heroku_config , and enter your api key you copied when prompted
+4. Complete the steps above, if you see an input box at the top middle of the editor...
+ a. enter your heroku username
+ b. enter the api key you just copied
+
 #### [Back to content](#table-of-contents)
 
 
@@ -162,3 +238,24 @@ I used the video tutorial provided by The Code Institute to create a Heroku acco
 
 ### Crispy forms instruction
 * https://www.geeksforgeeks.org/styling-django-forms-with-django-crispy-forms/
+
+### Django authentication help
+
+* https://www.youtube.com/watch?v=mpfHDSmqHds&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=9
+
+### Likes/Unlike tutorials
+
+* https://dev.to/radualexandrub/how-to-add-like-unlike-button-to-your-django-blog-5gkg
+
+### Messages
+
+* https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/ae7923cfce7f4653a3af9f51825d2eba/?child=first
+
+### Slack Community
+
+* davidwatters_5P and Daniel_C_5p for their hep on collecting static files.
+* Matt Bodden_5P on help with validating HTML/css WITH Django included.
+
+* My Mentor Miguel Martinez for his support through the whole process.
+
+* The Slack community as a whole for being awesome.
