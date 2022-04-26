@@ -18,7 +18,7 @@
 }
 
 body {
-    height: 100%;
+    min-height: 100vh;
     background-color: var(--ink);
 }
 
@@ -40,15 +40,15 @@ label {
 }
 
 main {
+    min-height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-
 }
 
 .test {
-    min-height: 82vh;
+    min-height: 100vh;
 }
 
 /* Continue reading style */
@@ -483,9 +483,9 @@ img {
 /* social icons from font awesome */
 
 footer {
-    position: static;
-    left: 0;
-    bottom: 0;
+    margin-top: auto;
+    /* left: 0;
+    bottom: 0; */
     background-color: var(--watermelon);
 }
 
