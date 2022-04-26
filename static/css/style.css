@@ -18,7 +18,7 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: var(--ink);
 }
 
@@ -47,9 +47,9 @@ main {
     align-content: center;
 }
 
-.test {
+/* .test {
     min-height: 100vh;
-}
+} */
 
 /* Continue reading style */
 .continue_button {
@@ -380,7 +380,7 @@ img {
 
 .container-edit {
     background-color: var(--white);
-    margin: 2rem 0 2rem 0;
+    margin: 0 0 1rem 0;
     padding: 5px;
     width: 90%;
     border-radius: 10px;
