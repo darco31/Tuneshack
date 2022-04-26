@@ -8,7 +8,10 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'home.html')
 
-    # def test_get_post_page(self):
+    def test_get_post_page(self):
+        response = self.client.get('add_comment')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'add_comment.html')
 
     # def add_post_page(self):
 
