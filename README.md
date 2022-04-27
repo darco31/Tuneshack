@@ -106,20 +106,30 @@
 signed up to login. No unauthorized users can comment or like the posts already shown.
 
 ### Posts Page
-![Home Page](static/img/post_page.PNG)
+![Posts Page](static/img/post_page.PNG)
+
+* The site user can view posts , add comments or likes if logged in. They can delete their own posts and update the posts but cant alter or delete other users posts.
 
 ### Posts with Comments
-![Home Page](static/img/comment_likes.PNG)
+![Comments Page](static/img/comment_likes.PNG)
+
+* The user can view the comments here.
 
 ### Login Page
-![Home Page](static/img/login.PNG)
+![Login Page](static/img/login.PNG)
+
+* The user can login from here.
 
 ### Sign up Page
-![Home Page](static/img/signup.PNG)
+![Sign Up Page](static/img/signup.PNG)
+
+* The user can sign up for the site here.
 
 #### [Back to content](#table-of-contents)
 
 ## Wireframes
+
+* All wireframes can be found [here](#static/img/project_four.pdf)
 
 #### [Back to content](#table-of-contents)
 
@@ -140,19 +150,19 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 * [Django](https://docs.djangoproject.com/en/4.0/)
     - Used to create the URLS, Views, Forms and models in the site. Also uses the Django Template Language within the HTML files.
-* Bootstrap
+* [Bootstrap](https://getbootstrap.com/)
     - Bootstrap is mainly used to style the page and add responsiveness to the website.
-* Cloudinary
+* [Cloudinary](https://cloudinary.com/)
     - Cloudinary is used to store all the images used withing the project.
-* Google Fonts
+* [Google Fonts](https://fonts.google.com/)
     - Used as the main fonts throughout the project.
-* Git
+* [Git](https://git-scm.com/)
     - Git is used for version control
-* Github
+* [Github](https://github.com/)
     - Github is being used to write the code and store the project as a whole.
-* Am I responsive
+* [Am I responsive](http://ami.responsivedesign.is/)
     - Used to display the main image in the README file.
-* Font Awesome
+* [Font Awesome](https://fontawesome.com/)
     - Font awesome is used for the like and dislike icons.
 
 
