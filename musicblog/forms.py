@@ -19,7 +19,7 @@ class PostForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Put your title here!!'}),
             'author': forms.TextInput(attrs={'class': 'form-control', 'value': '', 'id': 'username', 'type': 'hidden'}),
-            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Express yourself'}),
+            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Express yourself', 'required': 'true'}),
         }
 
 
