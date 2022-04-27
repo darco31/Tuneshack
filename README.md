@@ -102,6 +102,9 @@
 ### Home Page
 ![Home Page](static/img/home.PNG)
 
+* User can open the webpage from the URL provided and do not need to be registered to view the posts on the site. If not logged in the have the option to sign up or if already 
+signed up to login. No unauthorized users can comment or like the posts already shown.
+
 ### Posts Page
 ![Home Page](static/img/post_page.PNG)
 
@@ -122,13 +125,36 @@
 
 # Technology
 
-* Github
 * Django framework
-* HTML
-* CSS
+* HTML5
+* CSS3
 * Javascript
+    - Used to implement the change in year on in the copyright section of the footer.
+    - Also used to hid the field for the author name in the add post section, if this was visible the ID would appear and cause issues.
 * Python
+    - Used in conjunction with the Django framework to implement the website.
 * Heroku
+    - Use to deploy the project on to the live site.
+
+# Frameworks
+
+* Django
+    - Used to create the URLS, Views, Forms and models in the site. Also uses the Django Template Language within the HTML files.
+* Bootstrap
+    - Bootstrap is mainly used to style the page and add responsiveness to the website.
+* Cloudinary
+    - Cloudinary is used to store all the images used withing the project.
+* Google Fonts
+    - Used as the main fonts throughout the project.
+* Git
+    - Git is used for version control
+* Github
+    - Github is being used to write the code and store the project as a whole.
+* Am I responsive
+    - Used to display the main image in the README file.
+* Font Awesome
+    - Font awesome is used for the like and dislike icons.
+
 
 ## Requirements file
 
@@ -144,7 +170,7 @@
 
 #### [Back to content](#table-of-contents)
 
-# Testing
+# Testing (Manual)
 
 ### HTML Validator
 
@@ -153,6 +179,8 @@
 ### PEP8
 
 ## Lighthouse Scores
+
+# Testing (Automatic)
 
 #### [Back to content](#table-of-contents)
 
@@ -259,3 +287,5 @@ command: git push heroku main
 * My Mentor Miguel Martinez for his support through the whole process.
 
 * The Slack community as a whole for being awesome.
+
+# Issues/Bugs
