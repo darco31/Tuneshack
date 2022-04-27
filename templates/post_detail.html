@@ -52,7 +52,6 @@
 <p class="comment-alert">No comments Yet... <a href="{% url 'add_comment' post.pk %}">Add one here</a></p>
 
 {% else %}
-
 {% for comment in post.comments.all %}
 
 <div class="container comments-container">
@@ -64,13 +63,6 @@
         </div>
     </div>
 </div>
-
-
-
 {% endfor %}
 {% endif %}
-
-
-
-
 {% endblock %}
