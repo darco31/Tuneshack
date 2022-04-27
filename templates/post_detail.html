@@ -23,7 +23,7 @@
     {% endif %}
     {% endif %}
 
-    <a href="{% url 'add_comment' post.pk %}" class="likes_delete_button">Add Comment</a>
+    <!-- <a href="{% url 'add_comment' post.pk %}" class="likes_delete_button">Add Comment</a> -->
 </div>
 <!-- https://dev.to/radualexandrub/how-to-add-like-unlike-button-to-your-django-blog-5gkg -->
 
@@ -39,11 +39,13 @@
 </form>
 
 {% else %}
-<a class="login-btn" href="{% url 'login' %}?next={{request.path}}">Log in to like this article!</a><br>
+<a class="login-btn" href="{% url 'login' %}?next={{request.path}}">Log in to like/Comment on this article!</a><br>
 {% endif %}
 <strong class="num_likes">{{ number_of_likes }} Like{{ number_of_likes|pluralize }}</strong>
 
-
+{% if user.is_authenticated %}
+<a href="{% url 'add_comment' post.pk %}" class="likes_delete_button">Add Comment</a>
+{% endif %}
 <h2 class="comment-head">Comments</h2>
 {% if not post.comments.all %}
 
@@ -63,8 +65,12 @@
     </div>
 </div>
 
+
+
 {% endfor %}
 {% endif %}
+
+
 
 
 {% endblock %}
