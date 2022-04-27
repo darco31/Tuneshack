@@ -34,11 +34,12 @@ class Comment(models.Model):
     Comments model to display any user
     comments made on the site
     """
-    post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
+    post = models.ForeignKey(
+        Post, related_name="comments", on_delete=models.CASCADE
+        )
     name = models.CharField(max_length=255)
     body = models.TextField()
     created_on = models.DateField(auto_now_add=True)
-
 
     def __str__(self):
         return '%s - %s' % (self.post.title, self.name)

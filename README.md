@@ -138,7 +138,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 # Frameworks
 
-* Django
+* [Django](https://docs.djangoproject.com/en/4.0/)
     - Used to create the URLS, Views, Forms and models in the site. Also uses the Django Template Language within the HTML files.
 * Bootstrap
     - Bootstrap is mainly used to style the page and add responsiveness to the website.
