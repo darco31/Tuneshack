@@ -1,7 +1,7 @@
 from pathlib import Path
 import os
 import dj_database_url
-
+from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
 
@@ -33,6 +33,14 @@ INSTALLED_APPS = [
     'musicblog',
     'members',
 ]
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

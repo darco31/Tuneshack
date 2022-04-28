@@ -54,12 +54,22 @@
         </nav>
         <img src="{% static 'img/music_note.png' %}" alt="image of music notes" class="notes">
 
+        {% for message in messages %}
+        <div class="alert {{ message.tags }} alert-dismissible shadow fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            {{ message | safe }}
+        </div>
+        {% endfor %}
+
         <!-- Main content -->
         <main>
             {% block content%}
 
             {% endblock %}
         </main>
+
         <!-- Footer section to include some contact info and social links taken from my first project-->
         <footer id="social-contact">
             <ul class="social-networks">
