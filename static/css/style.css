@@ -47,9 +47,19 @@ main {
     align-content: center;
 }
 
-/* .test {
-    min-height: 100vh;
-} */
+/* Pagination styles */
+
+.page-link {
+    color: #ff3b3f;
+    background-color: #ffffff;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.page-link:hover {
+    color: #ff3b3f;
+    opacity: 0.8;
+}
 
 /* Continue reading style */
 .continue_button {
@@ -484,8 +494,6 @@ img {
 
 footer {
     margin-top: auto;
-    /* left: 0;
-    bottom: 0; */
     background-color: var(--watermelon);
 }
 
