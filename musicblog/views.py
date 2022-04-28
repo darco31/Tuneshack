@@ -12,6 +12,7 @@ class HomeView(ListView):
     model = Post
     template_name = 'home.html'
     ordering = ['-created_on']
+    paginate_by = 3
 
 
 class PostView(DetailView):
