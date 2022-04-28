@@ -13,23 +13,26 @@
     * [User Stories](#Userstories)
 
 3. [Features](#Features)
+    * [Colors](#Colors)
 
-4. [WireFrames](#Wireframes)
+4. [FlowChart Data Structure](#Flow-chart-and-data-structure)
 
-5. [Technology Used In Design](#Technology-Used-In-Design)
+5. [WireFrames](#Wireframes)
 
-5. [Database](#Database)
+6. [Technology Used In Design](#Technology-Used-In-Design)
 
-6. [Testing](#Testing)
+7. [Database](#Database)
+
+8. [Testing](#Testing)
     * [HTML Validator](#HTML-Validator)
     * [CSS Validator](#CSS_Validator)
     * [PEP 8](#PEP8)
 
-7. [Deployment](#Deployment)
+9. [Deployment](#Deployment)
 
-8. [Credits](#Credits)
+10. [Credits](#Credits)
 
-9. [Issues](#Issues)
+11. [Issues](#Issues)
 
 # The TuneShack
 
@@ -124,6 +127,24 @@ signed up to login. No unauthorized users can comment or like the posts already 
 ![Sign Up Page](static/img/signup.PNG)
 
 * The user can sign up for the site here.
+
+# Colors
+
+* The inspiration for the colors used on the website where taken from [Canva](https://www.canva.com/)
+
+![Colors](static/docs/colors.PNG)
+
+#### [Back to content](#table-of-contents)
+
+# FlowChart Data Structure
+
+* Tuneshack flowcart
+
+![Flow Chart TuneShack](static/docs/Flowchart.PNG)
+
+* Tuneshack data model
+
+![Data Model TuneShack](static/docs/datamodel.PNG)
 
 #### [Back to content](#table-of-contents)
 
@@ -273,6 +294,9 @@ command: git push heroku main
 
 
 # Credits
+
+### Reviews
+* Reviews taken for educational purpose only 
 
 ### Crispy forms instruction
 * https://www.geeksforgeeks.org/styling-django-forms-with-django-crispy-forms/
