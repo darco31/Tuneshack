@@ -129,7 +129,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ## Wireframes
 
-* All wireframes can be found [here](#static/img/project_four.pdf)
+* All wireframes can be found [here](static/docs/project_four.pdf)
 
 #### [Back to content](#table-of-contents)
 
