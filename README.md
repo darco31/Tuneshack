@@ -7,6 +7,7 @@
 1. [Overview](#Overview)
     * [About](#about)
     * [Scope](#Scope)
+    * [Agile](#Agile)
 
 2. [User Experience](#UserExperience)
     * [Project Goals](#Project-goals)
@@ -59,6 +60,10 @@
     - Search functionality
     - Email verification/password update
     - Categories to pick from
+
+## Agile
+
+![Agile](static/docs/user_stories.PNG)
 
 
 # User Experience

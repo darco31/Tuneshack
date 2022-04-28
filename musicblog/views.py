@@ -46,7 +46,7 @@ class AddPost(CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
-    
+
 
 class AddComment(CreateView):
 
