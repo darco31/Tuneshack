@@ -15,3 +15,8 @@ urlpatterns = [
     path
     ('article/<int:pk>/add_comment', AddComment.as_view(), name='add_comment'),
 ]
+
+HANDLER400 = 'musicblog.views.handler400'
+HANDLER400 = 'musicblog.views.handler403'
+HANDLER400 = 'musicblog.views.handler404'
+HANDLER400 = 'musicblog.views.handler500'
