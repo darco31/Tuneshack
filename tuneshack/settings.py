@@ -18,6 +18,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['tuneshack22.herokuapp.com', 'localhost']
 
+SITE_ID = 1
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -142,6 +146,4 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SITE_ID = 1
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'home'
+
