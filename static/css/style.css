@@ -23,6 +23,11 @@ body {
 }
 
 /* Generic styles */
+
+strong {
+    color: var(--white);
+}
+
 h3,
 p,
 small {

@@ -54,14 +54,18 @@
         </nav>
         <img src="{% static 'img/music_note.png' %}" alt="image of music notes" class="notes">
 
-        {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-            <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
-                {% endfor %}
-        </ul>
-        {% endif %}
-
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    {% for message in messages %}
+                    <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                        {{ message | safe }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
         <!-- Main content -->
         <main>
             {% block content%}
@@ -83,6 +87,9 @@
                 </li>
                 <li>
                     <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page(opens in a new tab)"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}" target="_blank" rel="noopener" aria-label="Contact us"><i class="fa fa-envelope"></i></a>
                 </li>
             </ul>
             <p class="footer-copyright">Copyright &copy; TheTuneShack <span id="copyright"></span></p>

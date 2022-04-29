@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Contact form -->
+<form>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" id="textarea" rows="10" placeholder="Leave us a message"></textarea>
+    </div>
+</form>
+
+<a href="{% url 'thanks' %}" class="delete_btn_back">Back</a>
+{% endblock %}

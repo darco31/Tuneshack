@@ -4,6 +4,7 @@ from .models import Post, Comment
 from .forms import PostForm, EditForm, AddComment
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 # Create your views here.
 
 
@@ -13,6 +14,14 @@ class HomeView(ListView):
     template_name = 'home.html'
     ordering = ['-created_on']
     paginate_by = 3
+
+
+def contact(request):
+    return render(request, 'contact.html', {})
+
+
+def thanks(request):
+    return render(request, 'thanks.html', {})
 
 
 class PostView(DetailView):
