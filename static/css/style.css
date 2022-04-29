@@ -54,6 +54,7 @@ main {
     background-color: #ffffff;
     margin: 2px;
     border-radius: 10px;
+    font-size: 1rem;
 }
 
 .page-link:hover {
