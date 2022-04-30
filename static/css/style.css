@@ -705,4 +705,59 @@ footer {
         padding: 5px;
         font-size: 1rem;
     }
+
+    .page-link {
+        color: #ff3b3f;
+        background-color: #ffffff;
+        margin: 1px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        padding: 1.5px;
+    }
+
+    .page-link:hover {
+        color: #ff3b3f;
+        opacity: 0.8;
+    }
+
+    .form-control {
+        max-width: 85%;
+    }
+
+    .add_post_btn {
+        font-size: 0.9rem;
+    }
+
+    .container-auth {
+        background-color: #ff3b3f;
+        padding: 10px;
+        margin: 30px 0 90px 0;
+        border-radius: 10px;
+        width: 95%;
+    }
+
+    .signup-head {
+        font-size: 1rem;
+    }
+
+    .welcome-text {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    #id_email {
+        text-align: center;
+    }
+
+    #id_username,
+    #id_password2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #id_password1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
 }
