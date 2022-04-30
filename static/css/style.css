@@ -41,7 +41,7 @@ hr {
 
 li,
 label {
-    color: var(--wine)
+    color: var(--wine);
 }
 
 main {
@@ -126,6 +126,48 @@ main {
 .edit_container {
     display: flex;
     flex-direction: column;
+}
+
+/*  signup page */
+
+.name,
+.welcome-text {
+    color: var(--wine);
+    font-size: 1.2rem;
+}
+
+.link,
+.signup-head {
+    color: var(--white)
+}
+
+.link:hover {
+    color: var(--wine);
+}
+
+#id_username {
+    margin-left: 60px;
+}
+
+#id_password1 {
+    margin-left: 65px;
+}
+
+#id_email {
+    margin-left: 5px;
+}
+
+/* Login page */
+
+#id_password {
+    margin-left: 5px;
+}
+
+/* logout page */
+
+.welcome-text,
+.signup-head {
+    text-align: center;
 }
 
 /* Title size for posts */

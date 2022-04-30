@@ -34,7 +34,7 @@
 </form>
 
 {% else %}
-<a class="login-btn" href="{% url 'login' %}?next={{request.path}}">Log in to like/Comment on this article!</a><br>
+<a class="login-btn" href="{% url 'account_login' %}?next={{request.path}}">Log in to like/Comment on this article!</a><br>
 {% endif %}
 <strong class="num_likes">{{ number_of_likes }} Like{{ number_of_likes|pluralize }}</strong>
 
