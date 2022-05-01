@@ -27,4 +27,3 @@ class TestViews(TestCase):
         response = self.client.get('/article/35/add_comment')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'add_comment.html')
-
