@@ -199,10 +199,19 @@ signed up to login. No unauthorized users can comment or like the posts already 
 * dj-database-url==0.5.0
 * dj3-cloudinary-storage==0.0.6
 * Django==3.2
+* django-allauth==0.50.0
+* django-ckeditor==6.4.0
+* django-crispy-forms==1.14.0
+* django-js-asset==2.0.0
 * gunicorn==20.1.0
+* oauthlib==3.2.0
 * psycopg2==2.9.3
+* PyJWT==2.3.0
+* python3-openid==3.2.0
 * pytz==2022.1
+* requests-oauthlib==1.3.1
 * sqlparse==0.4.2
+
 
 #### [Back to content](#table-of-contents)
 
@@ -298,8 +307,6 @@ command: git push heroku main
 
 #### [Back to content](#table-of-contents)
 
-
-
 # Credits
 
 ### Reviews
@@ -329,6 +336,8 @@ command: git push heroku main
 
 * The Slack community as a whole for being awesome.
 
+#### [Back to content](#table-of-contents)
+
 # Issues/Bugs
 
 ### Static files were not loading in the productions environment.
@@ -340,3 +349,5 @@ Fix:
 
 FIX:
 * Login and log out message were not appearing when the connected buttons were clicked byt the user. I installed all auth and this fixed the issues.
+
+#### [Back to content](#table-of-contents)
