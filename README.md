@@ -63,7 +63,7 @@
 
 ## Agile
 
-![Agile](static/docs/user_stories.PNG)
+![Agile](docs/user_stories.PNG)
 
 
 # User Experience
@@ -137,7 +137,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 * The inspiration for the colors used on the website where taken from [Canva](https://www.canva.com/)
 
-![Colors](static/docs/colors.PNG)
+![Colors](docs/colors.PNG)
 
 #### [Back to content](#table-of-contents)
 
@@ -145,17 +145,17 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 * Tuneshack flowcart
 
-![Flow Chart TuneShack](static/docs/Flowchart.PNG)
+![Flow Chart TuneShack](docs/Flowchart.PNG)
 
 * Tuneshack data model
 
-![Data Model TuneShack](static/docs/datamodel.PNG)
+![Data Model TuneShack](docs/datamodel.PNG)
 
 #### [Back to content](#table-of-contents)
 
 ## Wireframes
 
-* All wireframes can be found [here](static/docs/project_four.pdf)
+* All wireframes can be found [here](docs/project_four.pdf)
 
 #### [Back to content](#table-of-contents)
 
@@ -211,6 +211,8 @@ signed up to login. No unauthorized users can comment or like the posts already 
 ### HTML Validator
 
 ### CSS Validator
+
+![Flow Chart TuneShack](docs/css_validation.PNG)
 
 ### PEP8
 
@@ -328,3 +330,13 @@ command: git push heroku main
 * The Slack community as a whole for being awesome.
 
 # Issues/Bugs
+
+### Static files were not loading in the productions environment.
+
+Fix:
+* Move Docs in to the main folder from the static folder and re run collect static. This worked and all files are loading in Heroku.
+
+### Messages were not displaying correctly.
+
+FIX:
+* Login and log out message were not appearing when the connected buttons were clicked byt the user. I installed all auth and this fixed the issues.
