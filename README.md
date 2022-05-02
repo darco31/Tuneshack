@@ -331,7 +331,7 @@ command: git push heroku main
 # Credits
 
 ### Reviews
-* Reviews taken for educational purpose only from 
+* Album reviews taken for educational purpose only from https://www.bbc.co.uk/music/reviews/ and all reviews are credited to their respective owners on the site.
 
 ### Crispy forms instruction
 * https://www.geeksforgeeks.org/styling-django-forms-with-django-crispy-forms/
