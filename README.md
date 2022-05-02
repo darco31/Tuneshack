@@ -226,6 +226,8 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ### PEP8
 
+* All PEP8 validations can be found [here](docs/PEP8.pdf)
+
 ### Lighthouse Scores
 
 # Testing (Automatic)
