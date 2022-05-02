@@ -7,7 +7,7 @@
     <div class="container-post">
         <h1 class="head-delete my-2">Delete Post</h1>
         <h3>Delete : {{ post.title }} ?</h3>
-        <p>{{ post.body }}</p>
+        <p class="del-post">{{ post.body }}</p>
         <form method="post">
             {% csrf_token %}
     </div>

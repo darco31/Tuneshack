@@ -623,9 +623,31 @@ footer {
         text-align: center;
     }
 
+    label {
+        margin: 10px;
+        padding: 1px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .mx-5 {
+        width: 100%;
+    }
+
+    .del-post {
+        font-size: 0.8rem;
+    }
+
     .post-title {
         font-size: 0.9rem;
         margin-top: 1rem;
+    }
+
+    .post-title:hover {
+        font-size: 0.9rem;
     }
 
     .post-head {
@@ -764,6 +786,30 @@ footer {
     #id_password1 {
         margin-left: 0;
         text-align: center;
+    }
+
+    .login-btn {
+        font-size: 1rem;
+    }
+
+    .delete_btn_back,
+    .delete_btn {
+        padding: 2px;
+        margin-top: 25px;
+        font-size: 1rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fname,
+    .lname,
+    .email,
+    .text {
+        margin-top: 0.5rem;
     }
 
 }
