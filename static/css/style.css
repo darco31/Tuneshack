@@ -347,6 +347,11 @@ button {
     padding: 5px;
 }
 
+label {
+    margin-left: 40px;
+    padding: 3px;
+}
+
 #hint_id_username,
 #hint_id_password2 {
     display: none;
@@ -437,7 +442,8 @@ img {
 /* Contact us page styles */
 
 .form-control {
-    margin: 20px;
+    margin: auto;
+    width: 95%;
 }
 
 .section_one_heading {

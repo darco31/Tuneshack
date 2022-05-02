@@ -167,6 +167,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 * Javascript
     - Used to implement the change in year on in the copyright section of the footer.
     - Also used to hid the field for the author name in the add post section, if this was visible the ID would appear and cause issues.
+    - Used to remove the alert from the screens.
 * Python
     - Used in conjunction with the Django framework to implement the website.
 * Heroku
@@ -225,7 +226,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ### PEP8
 
-## Lighthouse Scores
+### Lighthouse Scores
 
 # Testing (Automatic)
 
@@ -317,7 +318,7 @@ command: git push heroku main
 
 ### Django authentication help
 
-* https://www.youtube.com/watch?v=mpfHDSmqHds&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=9
+* https://django-allauth.readthedocs.io/en/latest/
 
 ### Likes/Unlike tutorials
 
