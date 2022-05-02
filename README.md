@@ -229,9 +229,11 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ### HTML Validator
 
+![HTML Validations](docs/htmlvals.PNG)
+
 ### CSS Validator
 
-![Flow Chart TuneShack](docs/css_validation.PNG)
+![CSS Validations](docs/css_validation.PNG)
 
 ### PEP8
 
@@ -329,7 +331,7 @@ command: git push heroku main
 # Credits
 
 ### Reviews
-* Reviews taken for educational purpose only 
+* Reviews taken for educational purpose only from 
 
 ### Crispy forms instruction
 * https://www.geeksforgeeks.org/styling-django-forms-with-django-crispy-forms/
@@ -368,5 +370,10 @@ Fix:
 
 FIX:
 * Login and log out message were not appearing when the connected buttons were clicked byt the user. I installed all auth and this fixed the issues.
+
+### HTML Validator failing.
+
+FIX:
+* Removed stray div tag from the home.html page.
 
 #### [Back to content](#table-of-contents)
