@@ -607,6 +607,22 @@ footer {
     text-decoration: none;
 }
 
+/* Contact page styles. */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.email {
+    margin-bottom: 30px;
+}
+
+.delete_btn_back {
+    margin-top: 10px;
+}
+
 /* Media queries for small screens */
 @media screen and (max-width: 400px) {
 
