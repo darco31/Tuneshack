@@ -218,6 +218,15 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 # Testing (Manual)
 
+## I have tested the full CRUD functionality on the project.
+
+### Users can:
+
+- Create posts by clicking Add Post.
+- A user can delete or edit their own posts.
+- All users of the website can read posts.
+- A user can contact the site owner.
+
 ### HTML Validator
 
 ### CSS Validator
@@ -231,6 +240,13 @@ signed up to login. No unauthorized users can comment or like the posts already 
 ### Lighthouse Scores
 
 # Testing (Automatic)
+
+* I have performed some basic automatic tests as shown below on the forms and views.
+
+![Views](docs/test_views.PNG)
+
+![Forms](docs/forms_test.PNG)
+
 
 #### [Back to content](#table-of-contents)
 
