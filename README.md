@@ -26,7 +26,7 @@
 
 8. [Testing](#Testing)
     * [HTML Validator](#HTML-Validator)
-    * [CSS Validator](#CSS_Validator)
+    * [CSS Validator](#CSS-Validator)
     * [PEP 8](#PEP8)
 
 9. [Deployment](#Deployment)
