@@ -249,6 +249,10 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ### Lighthouse Scores
 
+![LightHouse](docs/lighthouse.PNG)
+
+![LightHouse mobile](docs/lighthouse_mobile.PNG)
+
 # Testing (Automatic)
 
 * I have performed some basic automatic tests as shown below on the forms and views.

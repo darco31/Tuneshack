@@ -507,8 +507,20 @@ img {
     margin: 0 20px 20px 20px;
 }
 
+.delete_btn1 {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    color: var(--watermelon);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 10px 20px 20px 20px;
+}
+
 .delete_btn:hover,
-.delete_btn_back:hover {
+.delete_btn_back:hover,
+.delete_btn1:hover {
     color: var(--watermelon);
     opacity: 0.8;
 }
