@@ -22,20 +22,21 @@
 
 6. [Technology Used In Design](#Technology-Used-In-Design)
 
-7. [Database](#Database)
-
-8. [Testing](#Testing)
+7. [Testing](#Testing)
     * [HTML Validator](#HTML-Validator)
     * [CSS Validator](#CSS-Validator)
     * [PEP 8](#PEP8)
+    * [Automatic testing](#Automatic-testing)
 
-9. [Deployment](#Deployment)
+8. [Deployment](#Deployment)
 
-10. [Credits](#Credits)
+9. [Credits](#Credits)
 
-11. [Issues](#Issues)
+10. [Issues](#Issues)
 
 # The TuneShack
+
+## Overview
 
 ### About
 * The Tuneshack is a blog website developed to encourage lovers of all types and genres of music to sign up and talk freely about their love of music, their favorite bands or the best concert they have ever been to. The blog can used to post dates and venues for upcoming concerts. Every body is welcome and encouraged to post and interact with each others posts weather leaving comments or just liking a post.
@@ -239,7 +240,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ![HTML Validations](docs/htmlvals.PNG)
 
-### CSS Validator
+### CSS-Validator
 
 ![CSS Validations](docs/css_validation.PNG)
 
@@ -253,7 +254,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ![LightHouse mobile](docs/lighthouse_mobile.PNG)
 
-# Testing (Automatic)
+# Automatic-testing
 
 * I have performed some basic automatic tests as shown below on the forms and views.
 
