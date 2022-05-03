@@ -10,12 +10,13 @@
     <div class="post-content">
         <ul>
             <li class="post-author">
-                <p class="author-name">By: {{ post.author|title}} <br><br>
+                <p class="author-name">By: {{ post.author|title}}<br>{{ post.created_on}} <br><br>
                     {{ post.body|slice:":150" }}
                 </p>
             </li>
         </ul>
-        <a href="{% url 'post-detail' post.pk %}" class="continue_button">Continue</a>
+        <!-- <a href="{% url 'post-detail' post.pk %}" class="continue_button">Continue</a> -->
+        <p class="likes">Number of Likes: {{ post.number_of_likes }}</p>
         {% if user.is_authenticated %}
         {% if user.id == post.author.id%}
         <a href="{% url 'edit_post' post.pk %}" class="edit_button_home">Edit</a>

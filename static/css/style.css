@@ -568,6 +568,12 @@ img {
     opacity: 0.8;
 }
 
+.likes {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--wine);
+}
+
 /* Footer styles */
 /* social icons from font awesome */
 
@@ -826,6 +832,13 @@ footer {
     .email,
     .text {
         margin-top: 0.5rem;
+    }
+
+    .likes {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        text-align: center;
+        color: var(--wine);
     }
 
 }

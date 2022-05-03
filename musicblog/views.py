@@ -12,8 +12,6 @@ from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 
-# Create your views here.
-
 
 class HomeView(ListView):
 
