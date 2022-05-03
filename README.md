@@ -254,6 +254,10 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 ![LightHouse mobile](docs/lighthouse_mobile.PNG)
 
+### Javascript-Validations
+
+![Javascript](docs/js_vals.PNG)
+
 # Automatic-testing
 
 * I have performed some basic automatic tests as shown below on the forms and views.
