@@ -25,9 +25,24 @@
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
    "cSpell.words": [
+      "allauth",
+      "asgiref",
+      "Balsamiq",
+      "Bodden",
+      "ckeditor",
       "cloudinary",
+      "datamodel",
+      "davidwatters",
       "flowcart",
+      "gunicorn",
+      "htmlcov",
+      "htmlvals",
+      "oauthlib",
+      "psycopg",
+      "pytz",
       "signup",
-      "Tuneshack"
+      "sqlparse",
+      "Tuneshack",
+      "Userstories"
    ]
 }

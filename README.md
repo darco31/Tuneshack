@@ -191,10 +191,18 @@ signed up to login. No unauthorized users can comment or like the posts already 
     - Used to display the main image in the README file.
 * [Font Awesome](https://fontawesome.com/)
     - Font awesome is used for the like and dislike icons.
-
+* [All Auth](https://django-allauth.readthedocs.io/en/latest/)
+    - All Auth used for authentication od website.
+* [PostGres](https://www.postgresql.org/download/)
+    - Database used through heroku.
+* [SQLite](https://django-allauth.readthedocs.io/en/latest/)
+    - https://www.sqlite.com/index.html
+* [SmartDraw](https://django-allauth.readthedocs.io/en/latest/)
+    - To draw out the database schema.
+* [Balsamiq](https://django-allauth.readthedocs.io/en/latest/)
+    - To create the wireframes.
 
 ## Requirements file
-
 * asgiref==3.5.0
 * cloudinary==1.29.0
 * dj-database-url==0.5.0
@@ -248,6 +256,10 @@ signed up to login. No unauthorized users can comment or like the posts already 
 ![Views](docs/test_views.PNG)
 
 ![Forms](docs/forms_test.PNG)
+
+![Test Results](docs/test_results.PNG)
+
+* I installed Coverage with pip3 install coverage and ran the program in the terminal with coverage run manage.py test. The file was generated with coverage html and the results can be found in the htmlcov file in the index.html file.
 
 
 #### [Back to content](#table-of-contents)
