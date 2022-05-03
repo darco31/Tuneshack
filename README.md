@@ -159,7 +159,7 @@ signed up to login. No unauthorized users can comment or like the posts already 
 
 #### [Back to content](#table-of-contents)
 
-# Technology
+# Technology-Used-In-Design
 
 * Django framework
 * HTML5

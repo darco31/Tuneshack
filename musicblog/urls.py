@@ -27,6 +27,6 @@ urlpatterns = [
 ]
 
 HANDLER400 = "musicblog.views.handler400"
-HANDLER400 = "musicblog.views.handler403"
-HANDLER400 = "musicblog.views.handler404"
-HANDLER400 = "musicblog.views.handler500"
+HANDLER403 = "musicblog.views.handler403"
+HANDLER404 = "musicblog.views.handler404"
+HANDLER500 = "musicblog.views.handler500"
